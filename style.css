@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation menu style */
+header {
+    background-color: #9cc4df;
+    box-shadow: 0px 12px 16px -8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menuNavegacao {
+    width: 380px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menuNavegacao li a {
+    color: #000000;
+    font-size: 20px;
+}
+
+.menuNavegacao li a:hover {
+    color: #ffffff;
+}
+
+/* main style */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main figure {
+    width: 100%;
+    height: 91vh;
+}
+
+main figure img {
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+.contentMain {
+    position: absolute;
+    width: 800px;
+}
+
+h2 {
+    margin-top: 18px;
+}
+
+p {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 18px;
+    text-indent: 10px;
+}
+
+.styleContentHour {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.styleContentHour p {
+    margin-bottom: 140px;
+    margin-left: 20px;
+}
+
+table {
+    width: 700px;
+    height: 250px;
+    margin-top: 340px;
+    border-collapse: collapse;
+}
+
+table th,
+td {
+    border: 1px solid black;
+}
+
+table thead th {
+    background-color: #105668;
+    color: #ffffff;
+}
+
+table tbody td {
+    text-align: center;
+    background-color: #cae4f5;
+}
+
+.contentMainContact {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.dataContact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-right: 80px;
+}
+
+.dataContact nav {
+    margin-bottom: 20px;
+}
+
+.dataContact iframe {
+    width: 450px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+label {
+    font-weight: 550;
+}
+
+form input {
+    font-size: 18px;
+    font-weight: 400;
+    color: #39586d;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+form textarea {
+    font-size: 18px;
+    font-weight: 400;
+    color: #39586d;
+    margin-top: 10px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+.buttonSection {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 170px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #000000;
+    background-color: #b3c6d3;
+    font-weight: 600;
+}
+
+button:hover {
+    color: #ffffff;
+}
+
+button:active {
+    background-color: #bfd7e7;
+}
+
+/* footer style */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    color: #a5a2a2;
+    background-color: #000000;
+    height: 33px;
+}
+
+footer a:hover {
+    color: #f8f5f5;
+}
+
+footer a:link,
+a:visited {
+    color: #a5a2a2;
+}
+
+/* telas médias */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .contentMain {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contentMainContact {
+        flex-direction: column;
+    }
+
+    .dataContact {
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .dataContact iframe {
+        height: 330px;
+    }
+
+    .formContact {
+        width: 445px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    button {
+        width: 220px;
+    }
+}
+
+/* telas pequenas */
+@media screen and (max-width: 767px) {
+
+    header {
+        height: 50px;
+        flex-direction: column;
+    }
+
+    header nav ul li a img {
+        width: 80px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .menuNavegacao {
+        width: 110%;
+        margin-right: 0px;
+    }
+
+    .menuNavegacao li a {
+        font-size: 13.3px;
+        font-weight: 550;
+    }
+
+    .contentMain {
+        width: 100%;
+        padding: 10px;   
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #paragraphAbout {
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    #imgAbout {
+        display: none;
+    }
+
+    .mainAbout {
+        background-color: #d1eaf0;
+    }
+
+    .contentMain p {
+        margin-top: 5px;
+        font-size: 13.3px;
+    }
+
+    .styleContentHour p {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+        margin-left: 0px;
+    }
+
+    table {
+        width: 110%;
+        height: 150px;
+        margin-top: 200px;
+        font-size: 13.3px;
+    }
+
+    .contentMainContact {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .dataContact {
+        margin-top: 3px;
+        margin-right: 0px;
+    }
+
+    .dataContact iframe {
+        width: 310px;
+        height: 150px;
+    }
+
+    .formContact {
+        width: 308px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    form input {
+        margin-top: 0px;
+    }
+
+    form textarea {
+        height: 90px;
+    }
+
+    button {
+        width: 150px;
+    }
+
+    footer {
+        font-size: 13.3px;
+    }
+}

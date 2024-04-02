@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a title="clique para ser direcionado a página principal" href="index.html">
+                        <img src="img/logoDevClin.png" alt="imagem com Logo Dev Clin escrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="menuNavegacao">
+                <li><a title="clique e confira nossa história" href="about.html">Sobre</a></li>
+                <li><a title="clique e confira nosso horario de atendimento" href="hours.html">Horário de
+                        Atendimento</a></li>
+                <li><a title="clique e entre em contato conoso" href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContact">
+        <figure>
+            <img src="img/backgroundContact.jpg"
+                alt="imagem de fundo azul claro contendo um estetoscópio e uma folha de papel na cor beje">
+        </figure>
+        <section class="contentMainContact">
+            <section class="dataContact">
+                <nav>
+                    <span>
+                        <h3>Nosso número:</h3> <a href="tel:+5581999999999">(81) 99999-9999</a>
+                    </span>
+                </nav>
+                <span>
+                    <h3>Nosso endereço:</h3>
+                    <address>Rua Dev Street N°0, Recife, Pe.</address>
+                </span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15801.441140483164!2d-34.89551885!3d-8.064684249999999!
+            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1712014926862!5m2!1spt-BR!2sbr" width="600"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+            <form class="formContact">
+                <label for="userName">
+                    Nome:
+                </label>
+                <input type="text" name="name" id="userName">
+                <label for="userEmail">
+                    Email:
+                </label>
+                <input type="email" name="email" id="userEmail">
+                <label for="userSubject">
+                    Assunto:
+                </label>
+                <input type="text" name="subject" id="userSubject">
+                <label for="userMessage">
+                    Nos conte o que deseja
+                </label>
+                <textarea name="message" id="userMessage" maxlength="200"></textarea>
+
+                <section class="buttonSection">
+                    <button type="submit" id="submitButton">Enviar</button>
+                    <button type="reset" id="resetButton">Limpar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footerContact">
+        <span>Desenvolvido por <a title="clique e veja meu GitHub" target="_blank"
+                href="https://github.com/joaopedrollgomes">João Pedro Gomes</a></span>
+    </footer>
+</body>
+
+</html>
